@@ -4,6 +4,26 @@
   <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+    <WebPublishMethod>MSDeploy</WebPublishMethod>
+      <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>  
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>  
+    <SiteUrlToLaunchAfterPublish>localhost/jenkinsops</SiteUrlToLaunchAfterPublish>  
+    <LaunchSiteAfterPublish>True</LaunchSiteAfterPublish>  
+    <ExcludeApp_Data>False</ExcludeApp_Data>  
+    <TargetFramework>netcoreapp2.0</TargetFramework>  
+    <ProjectGuid>6ac8c413-141d-4a6b-98ae-e134cf834df2</ProjectGuid>  
+    <MSDeployServiceURL>localhost</MSDeployServiceURL>  
+    <DeployIisAppPath>Default Web Site/jenkinsops</DeployIisAppPath>  
+    <RemoteSitePhysicalPath />  
+    <SkipExtraFilesOnServer>True</SkipExtraFilesOnServer>  
+    <MSDeployPublishMethod>InProc</MSDeployPublishMethod>  
+    <EnableMSDeployBackup>False</EnableMSDeployBackup>  
+    <UserName />  
+    <_SavePWD>False</_SavePWD>  
+    <PublishDatabaseSettings>   
+    <Objects xmlns="" />  
+    </PublishDatabaseSettings>
+
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>
